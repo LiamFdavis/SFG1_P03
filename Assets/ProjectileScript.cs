@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour
 {
     [SerializeField] float _projectileSpeed = 3f;
-    [SerializeField] int _projectileDamage = 1;
+    [SerializeField] public int _projectileDamage = 1;
     private void FixedUpdate()
     {
         MoveProjectile();
@@ -15,4 +15,5 @@ public class ProjectileScript : MonoBehaviour
     {
         transform.position += transform.forward * Time.deltaTime * _projectileSpeed;
     }
+
 }
