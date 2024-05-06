@@ -265,10 +265,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rateOfFire: 1
-  _limitedAmmo: 0
-  _maxAmmo: 10
-  _canReload: 0
-  _reloadSpeed: 1
+  _limitedAmmo: 1
+  _maxAmmo: 3
+  _canReload: 1
+  _reloadSpeed: 5
   _projectile: {fileID: 1193156837867126644, guid: c4a96b7833e368444a9e58d4aaa3c56e,
     type: 3}
 --- !u!1 &227392493
