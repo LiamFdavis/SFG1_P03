@@ -16,4 +16,12 @@ public class ProjectileScript : MonoBehaviour
         transform.position += transform.forward * Time.deltaTime * _projectileSpeed;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.GetComponent<ShootableScript>() == null)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
